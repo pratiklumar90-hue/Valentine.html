@@ -55,7 +55,6 @@
     position: relative; gap: 15px;
   }
 
-  /* GOLD YES */
   #yes { 
     background: linear-gradient(45deg, #bf953f, #fcf6ba, #b38728);
     color: #3b2a10; padding: 10px 22px; border-radius: 20px; 
@@ -69,7 +68,6 @@
     position: relative; z-index: 12; transition: all 0.3s ease;
   }
   
-  /* 4. BUTTONS BELOW ENVELOPE */
   .controls { margin-top: 30px; display: flex; justify-content: center; gap: 10px; }
   .controls button { 
     padding: 8px 20px; border-radius: 20px; border: 1px solid #d4af37; 
@@ -88,8 +86,8 @@
     
     <div class="letter" id="letter">
       <div id="header-zone">
-        <h3 style="color: #b38728; font-size: 16px;">To: Gulab</h3>
-        <p style="font-size: 14px; font-style: italic; line-height: 1.2;">“Will you be my long-term business partner & in this journey?”</p>
+        <h3 style="color: #b38728; font-size: 16px;">To: Riya</h3>
+        <p style="font-size: 14px; font-style: italic; line-height: 1.2;">“Will you be my Valentine and embark on this beautiful journey with me?”</p>
       </div>
 
       <div id="gif-zone"><img id="gif"></div>
@@ -123,7 +121,7 @@
   let noCount = 0;
   let yesScale = 1;
   const sounds = ["noS1", "noS2", "noS3", "noS4", "noS5", "noS6"];
-  const texts = ["Are you sure? 🤨", "Think! 🥺", "Last chance? 💔", "Remember why she left you 😂", "Ouch... 😭", "No is on holiday! 😏"];
+  const texts = ["Are you sure? 🤨", "Think again! 🥺", "Last chance? 💔", "Really? 😂", "Ouch... 😭", "No is on holiday! 😏"];
 
   function openLetter() { document.getElementById("env").classList.add("open"); }
   function closeLetter() { document.getElementById("env").classList.remove("open"); }
@@ -174,10 +172,10 @@
     document.getElementById("btn-group").style.display = "none";
     
     const reaction = document.getElementById("reaction");
-    reaction.innerHTML = "🤝 Partnership Accepted!<br>Welcome to the team, Gulab!";
+    reaction.innerHTML = "💖 Valentine Request Accepted!<br>I'm the luckiest person, Riya!";
     reaction.style.color = "#b38728";
-    reaction.style.fontSize = "22px";   /* Bigger font for success */
-    reaction.style.marginTop = "15px";  /* Moves message lower */
+    reaction.style.fontSize = "22px";
+    reaction.style.marginTop = "15px";
     
     let g = document.getElementById("gif");
     g.src = "yes.gif?v=" + Date.now();
